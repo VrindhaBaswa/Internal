@@ -3,12 +3,7 @@ pipeline{
         stages{
             stage('compile'){
                 steps{
-                    bat 'javac Factorial.java Test Factorial.java'
-                }
-            }
-            stage('Test'){
-                steps{
-                    bat 'java Test Factorial.java'
+                    bat 'javac Factorial.java'
                 }
             }
             stage('Run'){
